@@ -1,0 +1,47 @@
+body{
+  background-color: black;
+  font-family: arial;
+  color: white;
+  font-weight: bold;
+  
+}
+
+.myButton{
+  color: green;
+  /*display: block;*/
+  margin-bottom: 5px;
+  padding-top:  30px;
+  padding-bottom: 30px;
+  margin-left: 10px;
+  height: 80px;
+  width: 80px;
+  background-color: transparent;
+  border-color:  white;
+  border-radius: 40px;
+  
+
+  font-size: medium;
+
+
+}
+.gameTitle{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.theResult{
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.theMoves{
+  font-size: medium;
+  font-weight: bold;
+
+}
+.scoreUpdates{
+  font-size: medium;
+  font-weight: bold;
+
+}
