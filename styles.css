@@ -1,4 +1,8 @@
 body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   font-family: arial;
   color: white;
@@ -6,6 +10,21 @@ body{
   
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  /* background-color: rgb(11, 248, 27); */
+}
+
+.results{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .myButton{
   color: green;
   /*display: block;*/
@@ -19,7 +38,7 @@ body{
   border-color:  white;
   border-radius: 40px;
   
-
+  cursor: pointer;
   font-size: medium;
 
 

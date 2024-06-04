@@ -4,7 +4,7 @@
 
 const rock_button = document.getElementById('rock_button');
 
-rock_button.addEventListener('click', (event) =>{
+rock_button.addEventListener('click', () =>{
   displayColors();
   determineComputerMove();
   computeResult('rock');
@@ -27,7 +27,10 @@ scissors_button.addEventListener('click', () =>{
 
 const reset_button = document.getElementById('reset_button');
 reset_button.addEventListener('click', () =>{
-  resetScores();
+  const alertmsg = confirm("You are about to clear all scores!");
+  if(alertmsg){
+    resetScores();
+  }
   updateScores();
 });
 let score = JSON.parse(localStorage.getItem('score')) ||{ 
@@ -135,15 +138,15 @@ function displayColors() {
     const color_buttons = document.querySelectorAll('.myButton');
     color_buttons.forEach(button => {
       if (button.classList.contains('active')) {
-        button.style.color = colors[i];
+        button.style.backgroundColor = colors[i];
       } else {
-        button.style.color = ''; // Reset color for inactive buttons
+        button.style.backgroundColor = ''; // Reset color for inactive buttons
       }
     });
 
     i++;
     if (i === colors.length) {
-      i = 0;
+      i = -1;
     }
   }, 200);
 }
