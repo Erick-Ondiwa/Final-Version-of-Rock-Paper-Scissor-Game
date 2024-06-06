@@ -1,6 +1,6 @@
-// document.addEventListener('DOMContentLoaded', (event) => {
-//   displayColors();
-// });
+document.addEventListener('DOMContentLoaded', (event) => {
+  displayColors();
+});
 
 const rock_button = document.getElementById('rock_button');
 
@@ -21,7 +21,7 @@ paper_button.addEventListener('click', () =>{
 const scissors_button = document.getElementById('scissors_button');
 scissors_button.addEventListener('click', () =>{
   determineComputerMove();
-   computeResult('Scissors');
+  computeResult('Scissors');
   displayColors();
 });
 
@@ -30,9 +30,12 @@ reset_button.addEventListener('click', () =>{
   const alertmsg = confirm("You are about to clear all scores!");
   if(alertmsg){
     resetScores();
+    updateScores();
   }
-  updateScores();
+  
+  // confirm("Start again!");
 });
+
 let score = JSON.parse(localStorage.getItem('score')) ||{ 
   wins : 0,
   losses: 0,
@@ -138,9 +141,9 @@ function displayColors() {
     const color_buttons = document.querySelectorAll('.myButton');
     color_buttons.forEach(button => {
       if (button.classList.contains('active')) {
-        button.style.backgroundColor = colors[i];
+        button.style.color = colors[i];
       } else {
-        button.style.backgroundColor = ''; // Reset color for inactive buttons
+        button.style.color = ''; // Reset color for inactive buttons
       }
     });
 
