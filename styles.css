@@ -17,6 +17,7 @@ body{
   align-items: center;
   justify-content: center;
   background-color: black;
+  box-shadow: 3px 3px 5px hsl(0, 0%, 20%);
   border-radius: 10px;
   /* background-color: rgb(11, 248, 27); */
 }
@@ -42,10 +43,11 @@ body{
   cursor: pointer;
   font-size: bold;
   margin-bottom: 20px;
-
+  box-shadow: 3px 3px 5px hsl(0, 0%, 50%);
 
 }
 .gameTitle{
+  margin-top: 0;
   font-size: 30px;
   font-weight: bold;
 

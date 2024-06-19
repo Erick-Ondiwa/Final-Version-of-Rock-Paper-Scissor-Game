@@ -66,9 +66,6 @@ function computeResult(myChoice){
     }else if (computerMove === 'Scissors'){
       result = 'You win!';
     }
-    // document.querySelector('.js-scissorsButton')
-    // .addEventListener('click' () => {
-    // } ); 
 
   }else if (myChoice === 'Scissors'){
     result = '';
@@ -127,11 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
   displayColors();
   addClickHandlers();
 });
-
-// const color_result = document.getElementById('color_result');
-// color_result.addEventListener('DOMContentLoaded', () =>{
-//   style.color = displayColors();
-// });
 
 function displayColors() {
   let colors = ['Red', 'Green', 'Blue', 'Yellow'];
